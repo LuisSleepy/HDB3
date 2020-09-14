@@ -1,0 +1,23 @@
+1. Read the input
+2. If input[x] == 0
+3.	if input[x+1] == 0 && input[x+2] == 0 && input[x+3] == 0
+4.		subIndicator = true;
+5.		if initSub == false || pulseCounter % 2 == 0
+6.			initSub = true;
+7.			output[x] = output[x+1] = output[x+2] = 0;
+8.			output[x+3] = 1;
+9.		else
+10.			output[x] = currLvl;
+11.			currLvl = -currLvl;
+12.			output[x+1] = output[x+2] = 0;
+13.			output[x+3] = 1;
+14.		pulseCounter = 0;
+15.	else
+16.		if subIndicator = true;
+17.			pulseCounter++;
+18.		output[x] = 0;
+19. If input[x] == 1
+20.	if subIndicator = true
+21.		pulseCounter++; 
+22.	Output[x] = currLvl
+23.	currLvl = - currLvl; 
